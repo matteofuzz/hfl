@@ -1,0 +1,58 @@
+<form id="create-form" class="form-horizontal" action="<%= @url_action %>" method="post">
+  <input type="hidden" name="callback" value="createCallback">
+  <div class="control-group">
+    <label class="control-label" for="username">Username</label>
+    <div class="controls">
+      <input id="username" name="username" type="text" placeholder="Il tuo nome utente" required>
+    </div>
+  </div>
+  <div class="control-group">
+    <label class="control-label" for="password">Password</label>
+    <div class="controls">
+      <input id="password" name="password" type="password" placeholder="password" required>
+    </div>
+  </div>
+  <div class="control-group">
+    <label class="control-label" for="email">Email</label>
+    <div class="controls">
+      <input id="email" name="email" type="email" placeholder="La tua email" required>
+    </div>
+  </div>
+  <div class="control-group">
+    <label class="control-label" for="name">Nome</label>
+    <div class="controls">
+      <input id="name" name="name" type="text" placeholder="Il tuo nome" required>
+    </div>
+  </div>
+  <div class="control-group">
+    <label class="control-label" for="lastname">Cognome</label>
+    <div class="controls">
+      <input id="lastname" name="lastname" type="text" placeholder="Il tuo cognome" required>
+    </div>
+  </div>
+  <div class="control-group">
+    <label class="control-label" for="gender">Sesso</label>
+    <div class="controls">
+      <select name="gender" id="gender" size="1">
+        <option value="M">Maschio</option>
+        <option value="F">Femmina</option>
+      </select>
+    </div>
+  </div>
+  <div class="control-group">
+    <label class="control-label" for="age">Età</label>
+    <div class="controls">
+      <input id="age" name="age" type="number" placeholder="La tua età (10-99 anni)" required>
+    </div>
+  </div>
+  <div class="control-group">
+    <label class="control-label" for="terms">Accettazione termini</label>
+    <div class="controls">
+      <input type="checkbox" name="terms" value="1">
+    </div>
+    </label>
+  </div>
+  <div class="form-actions">  
+    <button type="submit" class="btn btn-primary .btn-block">Invia</button>
+  </div>
+</form>
